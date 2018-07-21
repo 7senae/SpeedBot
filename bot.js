@@ -2431,4 +2431,4 @@ client.on("message", (message) => {
     }
 });  
 
-client.login('NDcwMTYyOTM2Mzk3Mjk5NzIz.DjSRMg.wO2NBbfp3IF9fKb1q_fZLjV0U5w');
+client.login('NDQxMTg5NzQxMzcxNzE5Njgx.DjTnXA.P0mHt3AUlfH4h1-0599ky0f2BH8');
