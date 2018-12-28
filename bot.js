@@ -24,16 +24,14 @@ const sql = require("sqlite");
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
 
-client.on('message', message => {
-    if (message.author.bot) return;
-     if (message.content === prefix + "help") {
-message.reply('**check your DMs! :mailbox_with_mail: **')
-	
-		 
-
-
- message.author.sendMessage(`
-__~~FoxBOTS~~__ By: TEAM FOXS
+ 
+client.on("message", message => {
+	var prefix = "$";
+ if (message.content === "$help)(") {
+  const embed = new Discord.RichEmbed() 
+      .setColor("#000000") 
+      .setDescription(`
+	  __~~FoxBOTS~~__ By: TEAM FOXS
 ╔[❖════════════❖]╗
              Prefix = ' $ '
 ╚[❖════════════❖]╝
@@ -65,11 +63,14 @@ Server support: https://discord.gg/REKnChB
 ==================================================================
 bot invite link: https://discordapp.com/api/oauth2/authorize?client_id=528122045758832640&permissions=8&scope=bot
 ==================================================================
-`);
 
-    }
-});  
- 
+ملاحضه البوت محمي بكود الجحفله
+
+        `)
+   message.channel.sendEmbed(embed)
+    
+   }
+   }); 
 client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
